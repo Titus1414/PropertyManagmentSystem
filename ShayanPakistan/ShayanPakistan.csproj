@@ -1,0 +1,584 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6D456192-343B-49AD-AE59-8D5444993C81}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ShayanPakistan</RootNamespace>
+    <AssemblyName>ShayanPakistan</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\IT\Desktop\Published\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>8C6EF8A6C95A55F2530319E92C5368E87DB0E4F5</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ShayanPakistan_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddFineAppricationOrCompensation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFineAppricationOrCompensation.Designer.cs">
+      <DependentUpon>AddFineAppricationOrCompensation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewAssetsOrDetailUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewAssetsOrDetailUpdate.Designer.cs">
+      <DependentUpon>AddNewAssetsOrDetailUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewDept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewDept.Designer.cs">
+      <DependentUpon>AddNewDept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewExpenseHead.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewExpenseHead.Designer.cs">
+      <DependentUpon>AddNewExpenseHead.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllStaffForAssignments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllStaffForAssignments.Designer.cs">
+      <DependentUpon>AllStaffForAssignments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssetsDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssetsDetail.Designer.cs">
+      <DependentUpon>AssetsDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssetsReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssetsReport.Designer.cs">
+      <DependentUpon>AssetsReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssignmentsForStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssignmentsForStaff.Designer.cs">
+      <DependentUpon>AssignmentsForStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence.Designer.cs">
+      <DependentUpon>Attendence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence_Record_Monthly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence_Record_Monthly.Designer.cs">
+      <DependentUpon>Attendence_Record_Monthly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BanquitHall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BanquitHall.Designer.cs">
+      <DependentUpon>BanquitHall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BasicStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasicStaff.Designer.cs">
+      <DependentUpon>BasicStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuildingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuildingForm.Designer.cs">
+      <DependentUpon>BuildingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassColorForThreeNavBar.cs" />
+    <Compile Include="Daily Reciepts And Expenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Daily Reciepts And Expenses.Designer.cs">
+      <DependentUpon>Daily Reciepts And Expenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Departments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Departments.Designer.cs">
+      <DependentUpon>Departments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DGVPrinter.cs" />
+    <Compile Include="DomainNameAnDHosting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DomainNameAnDHosting.Designer.cs">
+      <DependentUpon>DomainNameAnDHosting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Duty Charter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Duty Charter.Designer.cs">
+      <DependentUpon>Duty Charter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpireDomains.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpireDomains.Designer.cs">
+      <DependentUpon>ExpireDomains.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonthlySalariesRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MonthlySalariesRecord.Designer.cs">
+      <DependentUpon>MonthlySalariesRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherDomains.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherDomains.Designer.cs">
+      <DependentUpon>OtherDomains.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlotForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlotForm.Designer.cs">
+      <DependentUpon>PlotForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseWin.Designer.cs">
+      <DependentUpon>PurchaseWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Salary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salary.Designer.cs">
+      <DependentUpon>Salary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchDataFromBuildingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchDataFromBuildingForm.Designer.cs">
+      <DependentUpon>SearchDataFromBuildingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchDataFromHouseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchDataFromHouseForm.Designer.cs">
+      <DependentUpon>SearchDataFromHouseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchDataFromPlotForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchDataFromPlotForm.Designer.cs">
+      <DependentUpon>SearchDataFromPlotForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchedDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchedDataForm.Designer.cs">
+      <DependentUpon>SearchedDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.cs">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gate Pass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gate Pass.Designer.cs">
+      <DependentUpon>Gate Pass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GetAppreciation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetAppreciation.Designer.cs">
+      <DependentUpon>GetAppreciation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GetCompensation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetCompensation.Designer.cs">
+      <DependentUpon>GetCompensation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GetFine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetFine.Designer.cs">
+      <DependentUpon>GetFine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imagepicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imagepicker.Designer.cs">
+      <DependentUpon>Imagepicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterviewApplications.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterviewApplications.Designer.cs">
+      <DependentUpon>InterviewApplications.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterviewDailyReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterviewDailyReport.Designer.cs">
+      <DependentUpon>InterviewDailyReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterviewOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterviewOptions.Designer.cs">
+      <DependentUpon>InterviewOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ledger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ledger.Designer.cs">
+      <DependentUpon>Ledger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonthlyRecordMonth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MonthlyRecordMonth.Designer.cs">
+      <DependentUpon>MonthlyRecordMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ownColorTable.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Property Services.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Property Services.Designer.cs">
+      <DependentUpon>Property Services.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoundButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="sarways.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sarways.Designer.cs">
+      <DependentUpon>sarways.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sarway_house.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sarway_house.Designer.cs">
+      <DependentUpon>sarway_house.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seniority.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seniority.Designer.cs">
+      <DependentUpon>Seniority.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffLeft.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffLeft.Designer.cs">
+      <DependentUpon>StaffLeft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffTrial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffTrial.Designer.cs">
+      <DependentUpon>StaffTrial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="temp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="temp.Designer.cs">
+      <DependentUpon>temp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilities.Designer.cs">
+      <DependentUpon>Utilities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="variables.cs" />
+    <EmbeddedResource Include="AddFineAppricationOrCompensation.resx">
+      <DependentUpon>AddFineAppricationOrCompensation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewAssetsOrDetailUpdate.resx">
+      <DependentUpon>AddNewAssetsOrDetailUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewDept.resx">
+      <DependentUpon>AddNewDept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewExpenseHead.resx">
+      <DependentUpon>AddNewExpenseHead.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllStaffForAssignments.resx">
+      <DependentUpon>AllStaffForAssignments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssetsDetail.resx">
+      <DependentUpon>AssetsDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssetsReport.resx">
+      <DependentUpon>AssetsReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssignmentsForStaff.resx">
+      <DependentUpon>AssignmentsForStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence.resx">
+      <DependentUpon>Attendence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence_Record_Monthly.resx">
+      <DependentUpon>Attendence_Record_Monthly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BanquitHall.resx">
+      <DependentUpon>BanquitHall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasicStaff.resx">
+      <DependentUpon>BasicStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Daily Reciepts And Expenses.resx">
+      <DependentUpon>Daily Reciepts And Expenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Departments.resx">
+      <DependentUpon>Departments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DomainNameAnDHosting.resx">
+      <DependentUpon>DomainNameAnDHosting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Duty Charter.resx">
+      <DependentUpon>Duty Charter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpireDomains.resx">
+      <DependentUpon>ExpireDomains.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonthlySalariesRecord.resx">
+      <DependentUpon>MonthlySalariesRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherDomains.resx">
+      <DependentUpon>OtherDomains.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseWin.resx">
+      <DependentUpon>PurchaseWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Salary.resx">
+      <DependentUpon>Salary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchDataFromBuildingForm.resx">
+      <DependentUpon>SearchDataFromBuildingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchedDataForm.resx">
+      <DependentUpon>SearchedDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gate Pass.resx">
+      <DependentUpon>Gate Pass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetAppreciation.resx">
+      <DependentUpon>GetAppreciation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetCompensation.resx">
+      <DependentUpon>GetCompensation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetFine.resx">
+      <DependentUpon>GetFine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagepicker.resx">
+      <DependentUpon>Imagepicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterviewApplications.resx">
+      <DependentUpon>InterviewApplications.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterviewDailyReport.resx">
+      <DependentUpon>InterviewDailyReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterviewOptions.resx">
+      <DependentUpon>InterviewOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ledger.resx">
+      <DependentUpon>Ledger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonthlyRecordMonth.resx">
+      <DependentUpon>MonthlyRecordMonth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Property Services.resx">
+      <DependentUpon>Property Services.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sarways.resx">
+      <DependentUpon>sarways.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sarway_house.resx">
+      <DependentUpon>sarway_house.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seniority.resx">
+      <DependentUpon>Seniority.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffLeft.resx">
+      <DependentUpon>StaffLeft.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffTrial.resx">
+      <DependentUpon>StaffTrial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="temp.resx">
+      <DependentUpon>temp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilities.resx">
+      <DependentUpon>Utilities.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="ShayanPakistan_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\logo-inverse.png" />
+    <Content Include="Images\shayan.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
